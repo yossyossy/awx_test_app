@@ -11,4 +11,4 @@
 
     - name: debug msg
       ansible.builtin.debug:
-        msg: "{{ result_shell }}" 
+        msg: "{{ result_shell.stdout_lines }}" 
