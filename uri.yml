@@ -6,7 +6,7 @@
       uri:
         url: "https://randomuser.me/api" 
         headers:
-          Accept: "application/json"
+          Content-Type: application/json
         status_code: 200
         method: GET
         return_content: yes
