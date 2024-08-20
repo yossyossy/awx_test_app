@@ -1,0 +1,17 @@
+---
+- name: debug message
+  hosts: localhost 
+  tasks:
+    - name: Get event list
+      uri:
+        url: "https://randomuser.me/api" 
+        headers:
+          Accept: "application/json"
+        status_code: 200
+        method: GET
+        return_content: yes
+      register: result_get_events_list
+    
+    - name: debug
+      debug:
+        var: result_get_events_list
