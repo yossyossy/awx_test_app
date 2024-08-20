@@ -1,0 +1,9 @@
+---
+- name: debug message
+  hosts: localhost 
+  tasks:
+    - name: Print Hello World
+      ansible.builtin.shell: |
+        date
+        uname -n
+        id
