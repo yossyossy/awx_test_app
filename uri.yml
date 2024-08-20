@@ -15,4 +15,5 @@
     - name: debug
       debug:
         #var: result_get_events_list
-        var: result_get_events_list.json
+        #var: result_get_events_list.json
+        var: result_get_events_list.json.results
