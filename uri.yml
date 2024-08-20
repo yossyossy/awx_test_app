@@ -14,4 +14,5 @@
     
     - name: debug
       debug:
-        var: result_get_events_list
+        #var: result_get_events_list
+        var: result_get_events_list.content
