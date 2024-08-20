@@ -2,8 +2,13 @@
 - name: debug message
   hosts: localhost 
   tasks:
-    - name: Print Hello World
+    - name: shell
       ansible.builtin.shell: |
         date
         uname -n
         id
+      register: result_shell
+
+    - name: debug msg
+      ansible.builtin.debug:
+        msg: "{{ result_shell }}" 
